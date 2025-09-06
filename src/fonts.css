@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('../assets/fonts/Geist-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('../assets/fonts/Geist-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist-italic';
+  src: url('../assets/fonts/Geist-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono-regular';
+  src: url('../assets/fonts/GeistMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('../assets/fonts/GeistMono-Light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}

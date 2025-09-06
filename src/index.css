@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@import './fonts.css';
+
+/* Optional: Define utility classes for the fonts */
+.font-geist {
+  font-family: 'Geist', sans-serif;
+}
+
+.font-geist-mono {
+  font-family: 'GeistMono-regular', monospace;
+}
+
+
+
+.font-geist-mono-light {
+  font-family: 'GeistMono', monospace;
+  font-weight: 100; /* Matches the light variant */
+}
