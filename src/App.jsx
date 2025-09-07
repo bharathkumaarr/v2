@@ -19,7 +19,7 @@ function App() {
               {/* Link works like an <a> tag but for SPA */}
               <Link
                 to="/resume"
-                className="text-zinc-100 font-awesome-serif rounded hover:text-zinc-300"
+                className="text-zinc-100 font-awesome-serif rounded hover:text-zinc-300 selection:bg-zinc-100"
               >
                 View Resume &rarr;
               </Link>
