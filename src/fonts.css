@@ -1,34 +1,41 @@
+/* Geist */
 @font-face {
   font-family: 'Geist';
   src: url('../assets/fonts/Geist-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Geist';
   src: url('../assets/fonts/Geist-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Geist-italic';
+  font-family: 'Geist';
   src: url('../assets/fonts/Geist-RegularItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
 
+/* Geist Mono */
 @font-face {
-  font-family: 'GeistMono-regular';
+  font-family: 'Geist Mono';
   src: url('../assets/fonts/GeistMono-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('../assets/fonts/GeistMono-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 
+/* Awesome Serif */
 @font-face {
-  font-family: 'GeistMono';
-  src: url('../assets/fonts/GeistMono-Light.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
+  font-family: 'Awesome Serif';
+  src: url('../assets/fonts/AwesomeSerifItalic-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
 }

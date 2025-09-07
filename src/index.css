@@ -1,18 +1,26 @@
 @import 'tailwindcss';
 @import './fonts.css';
 
-/* Optional: Define utility classes for the fonts */
+/* Utility classes for custom fonts */
+
+/* Geist (normal, bold, italic) */
 .font-geist {
   font-family: 'Geist', sans-serif;
 }
 
+/* Geist Mono (regular, light) */
 .font-geist-mono {
-  font-family: 'GeistMono-regular', monospace;
+  font-family: 'Geist Mono', monospace;
+  font-weight: 400; /* Regular */
 }
 
-
-
 .font-geist-mono-light {
-  font-family: 'GeistMono', monospace;
-  font-weight: 100; /* Matches the light variant */
+  font-family: 'Geist Mono', monospace;
+  font-weight: 300; /* Light */
+}
+
+/* Awesome Serif (italic only) */
+.font-awesome-serif {
+  font-family: 'Awesome Serif', serif;
+  font-style: italic;
 }
