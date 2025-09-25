@@ -16,17 +16,16 @@ function App() {
                 portfolio website coming soon.
               </div>
 
-              {/* Link works like an <a> tag but for SPA */}
-              <Link
+              {/* <Link
                 to="/resume"
                 className="text-zinc-100 font-awesome-serif rounded hover:text-zinc-300 selection:bg-zinc-100"
               >
                 View Resume &rarr;
-              </Link>
+              </Link> */}
             </div>
           }
         />
-        <Route path='/resume' element={<Resume />}/>
+        {/* <Route path='/resume' element={<Resume />}/> */}
       </Routes>
     </div>
   )
