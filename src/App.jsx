@@ -13,7 +13,7 @@ function App() {
           element={
             <div className="flex flex-col justify-center items-center">
               <div className="border-zinc-400 font-awesome-serif text-zinc-100 text-xl selection:bg-zinc-100 selection:text-black mb-2">
-                soon.
+                v2 soon.
               </div>
 
               {/* <Link
