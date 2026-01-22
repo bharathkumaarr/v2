@@ -1,11 +1,12 @@
 import {Route, Routes, Link } from 'react-router-dom'
-import Resume from './components/Resume'
+import Resume from './components/pages/Resume'
 import Navbar from './components/Navbar'
-import About from './components/About'
-import Loader from './components/Loader'
-import Blog from './components/Blog'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
+import About from './components/pages/About'
+import Loader from './components/pages/Loader'
+import Blog from './components/pages/Blog'
+import Contact from './components/pages/Contact'
+import Projects from './components/pages/Projects'
+import Home from './components/pages/Home'
 import { useState, useEffect } from 'react';
 
 
@@ -20,7 +21,7 @@ function App() {
       const timer = setTimeout(()=>{
       setIsLoading(false);
       sessionStorage.setItem('hasSeenLoader', true)
-    }, 3000);
+    }, 2800);
     return () => clearTimeout(timer);
       
     }
@@ -33,7 +34,7 @@ function App() {
   }, []);
 
   return (
-    <div className='h-screen w-screen bg-black text-zinc-400 flex justify-center'>
+    <div className='h-screen w-screen bg-black text-zinc-400 flex justify-center selection:bg-zinc-900 selection:text-zinc-100 transition-transform'>
 
       {isLoading ? (
         <Loader />
@@ -46,7 +47,7 @@ function App() {
 
         
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />

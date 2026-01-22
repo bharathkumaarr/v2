@@ -14,19 +14,19 @@ function Navbar() {
           </Link>
         </div>
 
-        <div className='w-7/20 flex items-center justify-between'>
+        <div className=' flex items-center justify-between'>
 
         <Link to='/about'>
-          <button className='border w-16 pt-1 pb-1 border-dashed border-zinc-900 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-zinc-300 hover:border-zinc-500 transition-all duration-500 ease-in-out cursor-pointer'>About</button>
+          <button className='border w-16 pt-1 pb-1 border-dashed border-zinc-900 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-zinc-300 hover:border-zinc-500 transition-all duration-500 ease-in-out cursor-pointer mr-3'>About</button>
         </Link>
 
 
         <Link to='projects'>
-          <button className='border w-16 pt-1 pb-1 border-dashed border-zinc-900 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-zinc-300 hover:border-zinc-500 transition-all duration-500 ease-in-out cursor-pointer'>Projects</button>
+          <button className='border w-16 pt-1 pb-1 border-dashed border-zinc-900 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-zinc-300 hover:border-zinc-500 transition-all duration-500 ease-in-out cursor-pointer mr-3'>Projects</button>
         </Link>
 
         <Link to='blog'>
-          <button className='border w-16 pt-1 pb-1 border-dashed border-zinc-900 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-zinc-300 hover:border-zinc-500 transition-all duration-500 ease-in-out cursor-pointer'>Blog</button>
+          <button className='border w-16 pt-1 pb-1 border-dashed border-zinc-900 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-zinc-300 hover:border-zinc-500 transition-all duration-500 ease-in-out cursor-pointer mr-3'>Blog</button>
         
         </Link>
         <Link to='contact'>
