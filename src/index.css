@@ -4,23 +4,38 @@
 /* Utility classes for custom fonts */
 
 /* Geist (normal, bold, italic) */
-.font-geist {
+/* .font-geist {
   font-family: 'Geist', sans-serif;
-}
+} */
 
 /* Geist Mono (regular, light) */
-.font-geist-mono {
+/* .font-geist-mono {
   font-family: 'Geist Mono', monospace;
-  font-weight: 400; /* Regular */
-}
+  font-weight: 400; 
+} */
 
-.font-geist-mono-light {
+/* .font-geist-mono-light {
   font-family: 'Geist Mono', monospace;
-  font-weight: 300; /* Light */
-}
+  font-weight: 300; 
+} */
 
 /* Awesome Serif (italic only) */
-.font-awesome-serif {
+/* .font-awesome-serif {
   font-family: 'Awesome Serif', serif;
   font-style: italic;
+} */
+
+
+@theme {
+  /* This creates 'font-hamilton' */
+  --font-hamilton: "Hamilton";
+
+  /* This creates 'font-geist' */
+  --font-geist: "Geist", sans-serif;
+
+  /* This creates 'font-geist-mono' */
+  --font-geist-mono: "Geist Mono", monospace;
+
+  /* This creates 'font-awesome' */
+  --font-awesome: "Awesome Serif", serif;
 }

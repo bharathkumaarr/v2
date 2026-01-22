@@ -1,32 +1,51 @@
-import { Route, Routes, Link } from 'react-router-dom'
+import {Router, Route, Routes, Link } from 'react-router-dom'
 import Resume from './components/Resume'
+import Navbar from './components/Navbar'
+import About from './components/About'
+import Loader from './components/Loader'
+import { useState, useEffect } from 'react';
 
 
 function App() {
-  
-  return (
-    <div className="bg-black h-screen w-screen flex justify-center items-center flex-col">
-      
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="flex flex-col justify-center items-center">
-              <div className="border-zinc-400 font-awesome-serif text-zinc-100 text-xl selection:bg-zinc-100 selection:text-black mb-2">
-                v2 soon.
-              </div>
+  const [isLoading, setIsLoading] = useState(true);
 
-              {/* <Link
-                to="/resume"
-                className="text-zinc-100 font-awesome-serif rounded hover:text-zinc-300 selection:bg-zinc-100"
-              >
-                View Resume &rarr;
-              </Link> */}
-            </div>
-          }
-        />
-        {/* <Route path='/resume' element={<Resume />}/> */}
-      </Routes>
+  useEffect(()=>{
+    const timer = setTimeout(()=>{
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className='h-screen w-screen bg-black text-zinc-400 flex justify-center'>
+
+      {isLoading ? (
+        <Loader />
+      ) : (<div className='h-full w-1/2 border border-dashed border-zinc-800 border-t-0 border-b-0'>
+
+
+      <Router>
+        <Navbar />
+
+        <Routes>
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<blog />} />
+          <Route path="/contact" element={<contact />} />
+        </Routes>
+      </Router>
+
+        
+      
+      
+
+      {/* <Routes>
+        <Route path='/' element={<Home />}></Route>
+      </Routes> */}
+
+      </div>) }
     </div>
   )
 }
