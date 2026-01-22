@@ -20,7 +20,7 @@ function App() {
       const timer = setTimeout(()=>{
       setIsLoading(false);
       sessionStorage.setItem('hasSeenLoader', true)
-    }, 2000);
+    }, 3000);
     return () => clearTimeout(timer);
       
     }
