@@ -5,7 +5,7 @@ export default function TargetCursor() {
   const [isHovering, setIsHovering] = useState(false);
   
   // Spring settings for that "weighted" feel
-  const springConfig = { stiffness: 600, damping: 40, mass: 0.5 };
+  const springConfig = { stiffness: 400, damping: 40, mass: 0.1 };
   const mouseX = useSpring(0, springConfig);
   const mouseY = useSpring(0, springConfig);
 

@@ -174,3 +174,21 @@ input,
 textarea {
   cursor: none !important;
 }
+html, body {
+  background-color: black;
+  cursor: none;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal jitter */
+}

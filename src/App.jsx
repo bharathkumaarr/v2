@@ -11,6 +11,9 @@ import Home from './pages/Home'
 import { useState, useEffect } from 'react';
 
 import TargetCursor from './components/TargetCursor';
+import { AnimatePresence } from 'framer-motion';
+import PageWrapper from './components/PageWrapper'
+
 
 
 function App() {
@@ -45,14 +48,17 @@ function App() {
         <main className="p-4">
 
 
-        
+        <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
+            <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+            <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
+            <Route path="/blog" element={<PageWrapper><Blog /></PageWrapper>} />
+            <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
           </Routes>
+
+        </AnimatePresence>
+          
         </main>
 
         
