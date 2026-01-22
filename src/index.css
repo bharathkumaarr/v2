@@ -160,3 +160,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide the cursor everywhere */
+* {
+  cursor: none !important;
+}
+
+/* Specifically target interactive elements to prevent browser override */
+a, 
+button, 
+[role="button"],
+input,
+textarea {
+  cursor: none !important;
+}

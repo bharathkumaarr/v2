@@ -1,13 +1,16 @@
+import { Lenis } from 'lenis/react'
 import {Route, Routes, Link } from 'react-router-dom'
-import Resume from './components/pages/Resume'
+import Resume from './pages/Resume'
 import Navbar from './components/Navbar'
-import About from './components/pages/About'
-import Loader from './components/pages/Loader'
-import Blog from './components/pages/Blog'
-import Contact from './components/pages/Contact'
-import Projects from './components/pages/Projects'
-import Home from './components/pages/Home'
+import About from './pages/About'
+import Loader from './pages/Loader'
+import Blog from './pages/Blog'
+import Contact from './pages/Contact'
+import Projects from './pages/Projects'
+import Home from './pages/Home'
 import { useState, useEffect } from 'react';
+
+import TargetCursor from './components/TargetCursor';
 
 
 function App() {
@@ -25,20 +28,17 @@ function App() {
     return () => clearTimeout(timer);
       
     }
-
-
-
-    
-
-    
   }, []);
 
   return (
-    <div className='h-screen w-screen bg-black text-zinc-400 flex justify-center selection:bg-zinc-900 selection:text-zinc-100 transition-transform'>
+    <Lenis root options={{ lerp: 0.05, duration: 2.5, smoothWheel: true, wheelMultiplier: 0.8,
+  touchMultiplier: 2, infinite: false, }}>
+      <div className='min-h-screen w-screen bg-black text-zinc-400 flex justify-center selection:bg-zinc-900 selection:text-zinc-100 cursor-none '>
+        <TargetCursor />
 
       {isLoading ? (
         <Loader />
-      ) : (<div className='h-full w-1/2 border border-dashed border-zinc-800 border-t-0 border-b-0'>
+      ) : (<div className='min-h-screen w-1/2 border border-dashed border-zinc-800 border-t-0 border-b-0'>
 
 
         <Navbar />
@@ -65,6 +65,11 @@ function App() {
 
       </div>) }
     </div>
+
+
+
+    </Lenis>
+    
   )
 }
 
