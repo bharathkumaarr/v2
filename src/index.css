@@ -2,6 +2,11 @@
 @import './fonts.css';
 @import "tw-animate-css";
 
+/* Hide the cursor everywhere */
+* {
+  cursor: none !important;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 /* Utility classes for custom fonts */
@@ -161,19 +166,17 @@
   }
 }
 
-/* Hide the cursor everywhere */
-* {
+
+
+/* Force override for every possible interactive element */
+a, button, [role="button"], input, textarea, select, label {
+  cursor: none !important;
+}
+/* This is the secret fix: target the shadow DOM and specific states */
+input:focus, button:active, a:hover {
   cursor: none !important;
 }
 
-/* Specifically target interactive elements to prevent browser override */
-a, 
-button, 
-[role="button"],
-input,
-textarea {
-  cursor: none !important;
-}
 html, body {
   background-color: black;
   cursor: none;

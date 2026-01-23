@@ -2,6 +2,7 @@ import { Lenis } from 'lenis/react'
 import {Route, Routes, Link } from 'react-router-dom'
 import Resume from './pages/Resume'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import About from './pages/About'
 import Loader from './pages/Loader'
 import Blog from './pages/Blog'
@@ -60,6 +61,7 @@ function App() {
         </AnimatePresence>
           
         </main>
+        <Footer />
 
         
       
